@@ -16,6 +16,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use(logReqRes('log.txt'));
 
 //Routes
-app.use('/api/users', userRouter);
+app.use('/users', userRouter);
 
 app.listen(port, () => console.log('Server Started at PORT :', port));
